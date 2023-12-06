@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-06T17:10:35 IST" name="Default suite" finished-at="2023-12-06T17:14:48 IST" duration-ms="252493">
+    <groups>
+    </groups>
+    <test started-at="2023-12-06T17:10:35 IST" name="Default test" finished-at="2023-12-06T17:14:48 IST" duration-ms="252493">
+      <class name="tests.Signup">
+        <test-method signature="signuppage()[pri:0, instance:tests.Signup@11392934]" started-at="2023-12-06T17:10:35 IST" name="signuppage" finished-at="2023-12-06T17:10:50 IST" duration-ms="14847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signuppage -->
+        <test-method signature="register()[pri:0, instance:tests.Signup@11392934]" started-at="2023-12-06T17:10:50 IST" name="register" finished-at="2023-12-06T17:14:48 IST" depends-on-methods="tests.Signup.signuppage" duration-ms="237504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method signature="logindetailspage()[pri:0, instance:tests.Signup@11392934]" started-at="2023-12-06T17:14:48 IST" name="logindetailspage" finished-at="2023-12-06T17:14:48 IST" depends-on-methods="tests.Signup.signuppage, tests.Signup.register" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logindetailspage -->
+      </class> <!-- tests.Signup -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
