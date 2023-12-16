@@ -17,11 +17,11 @@ public class Basetest {
 		return driver;
 	}
 	
-	public Signuppage LaunchApplication() throws IOException {
+	/*public Signuppage LaunchApplication() throws IOException {
 		driver = intialisebrowser();
 		Signuppage sp = new Signuppage(driver);
 		sp.GoTo();
-		return sp;
-	}
+		return sp;}*/
+	
 }
 

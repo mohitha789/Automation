@@ -1,6 +1,5 @@
 package pageelements;
 
-import java.io.IOException;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,12 +18,6 @@ public Signuppage(WebDriver driverhere) {
 			PageFactory.initElements(driver, this);
 		}
 		
-public void GoTo() throws IOException {
-			driver.get("http://automationexercise.com");
-			//driver.manage().deleteAllCookies();
-			driver.manage().window().maximize();
-			System.out.println("Home page is successfully visibled");
-		}
 		@FindBy(xpath = "//a[@href='/login']")
 		WebElement login;
 		
@@ -37,15 +30,13 @@ public void GoTo() throws IOException {
 		@FindBy(xpath = "(//button[@type='submit'])[2]")
 		WebElement submitbutton;
 		
-public Register enterSignupdetails(String Name, String EmailAddress) throws InterruptedException {
+public void enterSignupdetails(String Name, String EmailAddress) throws InterruptedException {
 			implicitlywaitmethod();	
 			login.click();
 			System.out.println("'New User Signup!' is visible");
 			entername.sendKeys(Name);
 			enteremail.sendKeys(EmailAddress);
 			submitbutton.sendKeys(Keys.ENTER);
-			Register r = new Register(driver);
-			return r;
 			
 		}
 }

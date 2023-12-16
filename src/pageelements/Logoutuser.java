@@ -8,11 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.AbstractMethods;
 
-public class Logindetailspage extends AbstractMethods {
+public class Logoutuser extends AbstractMethods {
 
 	WebDriver driver;
 
-	public Logindetailspage(WebDriver driverhere) {
+	public Logoutuser(WebDriver driverhere) {
 		super(driverhere);
 		this.driver = driverhere;
 		PageFactory.initElements(driver, this);
@@ -30,27 +30,19 @@ public class Logindetailspage extends AbstractMethods {
 	@FindBy(xpath = "(//button[@type='submit'])[1]")
 	public WebElement submitbutton;
 
-	/*
-	 * @FindBy(xpath = "//a[@href='/delete_account']") WebElement deleteaccount;
-	 */
 	@FindBy(xpath = "//a[@href='/logout']")
 	WebElement logout;
 
-	public void logindetailspage() throws InterruptedException {
+	public void logdetails() {
 		implicitlywaitmethod();
 		login.click();
+		System.out.println(" Verify 'Login to your account' is visible");
 		enteremail.sendKeys("mohitha11@gmail.com");
 		Password.sendKeys("Krish$146");
 		submitbutton.sendKeys(Keys.ENTER);
-		System.out.println("'Logged in as username' is visible");
-	}
-
-	public void delaccount() {
-		implicitlywaitmethod();
+		System.out.println("Verify that 'Logged in as username' is visible");
 		logout.click();
-		/*
-		 * deleteaccount.click(); System.out.println("'ACCOUNT DELETED!' is visible ");
-		 */
-
+		driver.navigate().to("https://automationexercise.com/login");
+		System.out.println("Verify that user is navigated to login page");
 	}
 }

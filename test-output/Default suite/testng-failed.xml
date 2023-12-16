@@ -5,9 +5,14 @@
     <classes>
       <class name="tests.Signup">
         <methods>
-          <include name="register"/>
-          <include name="signuppage"/>
-          <include name="logindetailspage"/>
+          <include name="Loginbeforecheckout"/>
+          <include name="Addressdetails"/>
+          <include name="Verifycartafterlogin"/>
+          <include name="Beforecheckout"/>
+          <include name="Recommendeditems"/>
+          <include name="intialisebrowser"/>
+          <include name="Removefromcart"/>
+          <include name="Downloadinvoice"/>
         </methods>
       </class> <!-- tests.Signup -->
     </classes>

@@ -8,11 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.AbstractMethods;
 
-public class Logindetailspage extends AbstractMethods {
-
+public class Loginbeforecheckout extends AbstractMethods {
 	WebDriver driver;
 
-	public Logindetailspage(WebDriver driverhere) {
+	public Loginbeforecheckout(WebDriver driverhere) {
 		super(driverhere);
 		this.driver = driverhere;
 		PageFactory.initElements(driver, this);
@@ -30,27 +29,19 @@ public class Logindetailspage extends AbstractMethods {
 	@FindBy(xpath = "(//button[@type='submit'])[1]")
 	public WebElement submitbutton;
 
-	/*
-	 * @FindBy(xpath = "//a[@href='/delete_account']") WebElement deleteaccount;
-	 */
-	@FindBy(xpath = "//a[@href='/logout']")
-	WebElement logout;
-
-	public void logindetailspage() throws InterruptedException {
+	public void logincheckout() {
 		implicitlywaitmethod();
 		login.click();
 		enteremail.sendKeys("mohitha11@gmail.com");
 		Password.sendKeys("Krish$146");
 		submitbutton.sendKeys(Keys.ENTER);
 		System.out.println("'Logged in as username' is visible");
+		Addproduct ap = new Addproduct(driver);
+		ap.addcart();
+		ap.addproductincart();
+		Registerwhilecheckout rc = new Registerwhilecheckout(driver);
+		rc.proceedbtn();
+		rc.deletebtn();
 	}
 
-	public void delaccount() {
-		implicitlywaitmethod();
-		logout.click();
-		/*
-		 * deleteaccount.click(); System.out.println("'ACCOUNT DELETED!' is visible ");
-		 */
-
-	}
 }
