@@ -37,7 +37,7 @@ public class Beforecheckout extends AbstractMethods {
 		implicitlywaitmethod();
 		login.click();
 		entername.sendKeys("Mohitha");
-		enteremail.sendKeys("mohitha11@gmail.com");
+		enteremail.sendKeys("mohitha99@gmail.com");
 		submitbutton.sendKeys(Keys.ENTER);
 		rg = new Register(driver);
 		rg.register();

@@ -83,7 +83,7 @@ public class Registerwhilecheckout extends AbstractMethods {
 		checkout1.click();
 		login.click();
 		entername.sendKeys("Mohitha");
-		enteremail.sendKeys("mohitha11@gmail.com");
+		enteremail.sendKeys("mohitha20@gmail.com");
 		submitbutton.sendKeys(Keys.ENTER);
 		rg = new Register(driver);
 		rg.register();

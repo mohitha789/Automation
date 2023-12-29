@@ -39,7 +39,7 @@ public class Logindetailspage extends AbstractMethods {
 	public void logindetailspage() throws InterruptedException {
 		implicitlywaitmethod();
 		login.click();
-		enteremail.sendKeys("mohitha11@gmail.com");
+		enteremail.sendKeys("mohitha20@gmail.com");
 		Password.sendKeys("Krish$146");
 		submitbutton.sendKeys(Keys.ENTER);
 		System.out.println("'Logged in as username' is visible");

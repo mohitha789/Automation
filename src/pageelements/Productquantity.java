@@ -1,5 +1,6 @@
 package pageelements;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,7 +36,8 @@ public class Productquantity extends AbstractMethods {
 		products.click();
 		viewproduct.click();
 		System.out.println("Verify product detail is opened");
-		Increaseqnty.clear();
+		Increaseqnty.sendKeys(Keys.CONTROL + "a");
+		Increaseqnty.sendKeys(Keys.DELETE);
 		Increaseqnty.sendKeys("4");
 		addtocart.click();
 		viewcart.click();

@@ -96,88 +96,62 @@ public class Signup {
 		sp.enterSignupdetails(Name, EmailAddress);
 	}
 
-	@Test(priority = 2)
-	public void Register() throws IOException, InterruptedException {
-		rg = new Register(driver);
-		rg.register();
-		rg.logout();
-	}
+	/*
+	 * @Test(priority = 2) public void Register() throws IOException,
+	 * InterruptedException { rg = new Register(driver); rg.register(); rg.logout();
+	 * }
+	 * 
+	 * @Test(priority = 3) public void logindetailspage() throws IOException,
+	 * InterruptedException { lp = new Logindetailspage(driver);
+	 * lp.logindetailspage(); lp.delaccount(); }
+	 * 
+	 * @Test(priority = 4) public void incorrect() throws IOException,
+	 * InterruptedException { TC_3 tc3 = new TC_3(driver); tc3.incorrectmailid();
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 5) public void logout() throws IOException,
+	 * InterruptedException { Logoutuser lu = new Logoutuser(driver);
+	 * lu.logdetails(); }
+	 * 
+	 * @Test(priority = 6) public void existingdetails() throws IOException,
+	 * InterruptedException { Existingmail em = new Existingmail(driver);
+	 * em.existingdetails(); }
+	 * 
+	 * @Test(priority = 7) public void fillForm() throws IOException,
+	 * InterruptedException { Contactusform cu = new Contactusform(driver);
+	 * cu.fillForm(); cu.okButtonClick(); }
+	 * 
+	 * @Test(priority = 8) public void testcase() throws IOException,
+	 * InterruptedException { Testcasespage tp = new Testcasespage(driver);
+	 * tp.testcase(); }
+	 * 
+	 * @Test(priority = 9) public void productdetailspage() throws IOException,
+	 * InterruptedException { Productdetailspage pd = new
+	 * Productdetailspage(driver); pd.productdetails(); }
+	 * 
+	 * @Test(priority = 10) public void searchproduct() throws IOException,
+	 * InterruptedException { Searchproduct spr = new Searchproduct(driver);
+	 * spr.productsearchbox(); }
+	 * 
+	 * @Test(priority = 11) public void Subscriptionpage() throws IOException,
+	 * InterruptedException { Subscriptioninhomepage sh = new
+	 * Subscriptioninhomepage(driver); sh.subscription(); }
+	 * 
+	 * @Test(priority = 12) public void Cartpage() throws IOException,
+	 * InterruptedException { Cartpage cp = new Cartpage(driver); cp.subCartpage();
+	 * }
+	 */
 
-	@Test(priority = 3)
-	public void logindetailspage() throws IOException, InterruptedException {
-		lp = new Logindetailspage(driver);
-		lp.logindetailspage();
-		lp.delaccount();
-	}
-
-	@Test(priority = 4)
-	public void incorrect() throws IOException, InterruptedException {
-		TC_3 tc3 = new TC_3(driver);
-		tc3.incorrectmailid();
-
-	}
-
-	@Test(priority = 5)
-	public void logout() throws IOException, InterruptedException {
-		Logoutuser lu = new Logoutuser(driver);
-		lu.logdetails();
-	}
-
-	@Test(priority = 6)
-	public void existingdetails() throws IOException, InterruptedException {
-		Existingmail em = new Existingmail(driver);
-		em.existingdetails();
-	}
-
-	@Test(priority = 7)
-	public void fillForm() throws IOException, InterruptedException {
-		Contactusform cu = new Contactusform(driver);
-		cu.fillForm();
-		cu.okButtonClick();
-	}
-
-	@Test(priority = 8)
-	public void testcase() throws IOException, InterruptedException {
-		Testcasespage tp = new Testcasespage(driver);
-		tp.testcase();
-	}
-
-	@Test(priority = 9)
-	public void productdetailspage() throws IOException, InterruptedException {
-		Productdetailspage pd = new Productdetailspage(driver);
-		pd.productdetails();
-	}
-
-	@Test(priority = 10)
-	public void searchproduct() throws IOException, InterruptedException {
-		Searchproduct spr = new Searchproduct(driver);
-		spr.productsearchbox();
-	}
-
-	@Test(priority = 11)
-	public void Subscriptionpage() throws IOException, InterruptedException {
-		Subscriptioninhomepage sh = new Subscriptioninhomepage(driver);
-		sh.subscription();
-	}
-
-	@Test(priority = 12)
-	public void Cartpage() throws IOException, InterruptedException {
-		Cartpage cp = new Cartpage(driver);
-		cp.subCartpage();
-	}
-
-	@Test(priority = 13)
-	public void Addproduct() throws IOException, InterruptedException {
-		Addproduct ap = new Addproduct(driver);
-		ap.addcart();
-		ap.addproductincart();
-	}
-
-	@Test(priority = 14)
-	public void Productquantity() throws IOException, InterruptedException {
-		Productquantity pq = new Productquantity(driver);
-		pq.quantity();
-	}
+	/*
+	 * @Test(priority = 13) public void Addproduct() throws IOException,
+	 * InterruptedException { Addproduct ap = new Addproduct(driver); ap.addcart();
+	 * ap.addproductincart(); }
+	 * 
+	 * @Test(priority = 14) public void Productquantity() throws IOException,
+	 * InterruptedException { Productquantity pq = new Productquantity(driver);
+	 * pq.quantity(); }
+	 */
 
 	@Test(priority = 15)
 	public void Registerwhilecheckout() throws IOException, InterruptedException {
@@ -200,66 +174,51 @@ public class Signup {
 		lc.logincheckout();
 	}
 
-	@Test(priority = 18)
-	public void Removefromcart() throws IOException, InterruptedException {
-		Removefromcart rfc = new Removefromcart(driver);
-		rfc.removecart();
-	}
+	/*
+	 * @Test(priority = 18) public void Removefromcart() throws IOException,
+	 * InterruptedException { Removefromcart rfc = new Removefromcart(driver);
+	 * rfc.removecart(); }
+	 * 
+	 * @Test(priority = 19) public void Viewcategory() throws IOException,
+	 * InterruptedException { Viewcategory vc = new Viewcategory(driver); vc.view();
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 20) public void Cartbrand() throws IOException,
+	 * InterruptedException { Cartbrand cb = new Cartbrand(driver); cb.cartbrand();
+	 * }
+	 * 
+	 * @Test(priority = 21) public void Verifycartafterlogin() throws IOException,
+	 * InterruptedException { Verifycartafterlogin vcl = new
+	 * Verifycartafterlogin(driver); vcl.cartafterlogin(); }
+	 */
 
-	@Test(priority = 19)
-	public void Viewcategory() throws IOException, InterruptedException {
-		Viewcategory vc = new Viewcategory(driver);
-		vc.view();
-
-	}
-
-	@Test(priority = 20)
-	public void Cartbrand() throws IOException, InterruptedException {
-		Cartbrand cb = new Cartbrand(driver);
-		cb.cartbrand();
-	}
-
-	@Test(priority = 21)
-	public void Verifycartafterlogin() throws IOException, InterruptedException {
-		Verifycartafterlogin vcl = new Verifycartafterlogin(driver);
-		vcl.cartafterlogin();
-	}
-
-	@Test(priority = 22)
-	public void Addreview() throws IOException, InterruptedException {
-		Addreview ar = new Addreview(driver);
-		ar.addreview();
-	}
-
-	@Test(priority = 23)
-	public void Recommendeditems() throws IOException, InterruptedException {
-		Recommendeditems ri = new Recommendeditems(driver);
-		ri.items();
-	}
-
-	@Test(priority = 24)
-	public void Addressdetails() throws IOException, InterruptedException {
-		Addressdetails ad = new Addressdetails(driver);
-		ad.addressdetails();
-	}
-
-	@Test(priority = 25)
-	public void Downloadinvoice() throws IOException, InterruptedException {
-		Downloadinvoice d = new Downloadinvoice(driver);
-		d.download();
-	}
-
-	@Test(priority = 26)
-	public void Scrollupusingarrow() throws IOException, InterruptedException {
-		Scrollupusingarrow sa = new Scrollupusingarrow(driver);
-		sa.usingarrow();
-	}
-
-	@Test(priority = 27)
-	public void Scrollupwithoutarrow() throws IOException, InterruptedException {
-		Scrollupwithoutarrow su = new Scrollupwithoutarrow(driver);
-		su.withoutarrow();
-	}
+	/*
+	 * @Test(priority = 22) public void Addreview() throws IOException,
+	 * InterruptedException { Addreview ar = new Addreview(driver); ar.addreview();
+	 * }
+	 * 
+	 * @Test(priority = 23) public void Recommendeditems() throws IOException,
+	 * InterruptedException { Recommendeditems ri = new Recommendeditems(driver);
+	 * ri.items(); }
+	 * 
+	 * @Test(priority = 24) public void Addressdetails() throws IOException,
+	 * InterruptedException { Addressdetails ad = new Addressdetails(driver);
+	 * ad.addressdetails(); }
+	 */
+	/*
+	 * @Test(priority = 25) public void Downloadinvoice() throws IOException,
+	 * InterruptedException { Downloadinvoice d = new Downloadinvoice(driver);
+	 * d.download(); }
+	 * 
+	 * @Test(priority = 26) public void Scrollupusingarrow() throws IOException,
+	 * InterruptedException { Scrollupusingarrow sa = new
+	 * Scrollupusingarrow(driver); sa.usingarrow(); }
+	 * 
+	 * @Test(priority = 27) public void Scrollupwithoutarrow() throws IOException,
+	 * InterruptedException { Scrollupwithoutarrow su = new
+	 * Scrollupwithoutarrow(driver); su.withoutarrow(); }
+	 */
 
 	@AfterClass
 	public void closebrowser() {

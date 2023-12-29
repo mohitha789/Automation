@@ -25,7 +25,7 @@ public class Addressdetails  extends AbstractMethods {
 	WebElement continuebtn;
 
 	public void addressdetails() {
-		
+		implicitlywaitmethod();
 		Beforecheckout bc = new Beforecheckout(driver);
 		bc.beforecheckout();
 		checkout.click();
